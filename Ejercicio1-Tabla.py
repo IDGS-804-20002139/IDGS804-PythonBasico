@@ -1,15 +1,9 @@
 
 num1=int(input('Dame el numero para la multiplicacion'))
 
-def resta(a,b):
-    x=a-b
-    print(x)
 
-resta(3,5)
-
-def Tabla(num1):
+def Tabla(valorResul):
     for x in range(1,11):
-    x=num1*x
-    print(x)
+        print("{0} x {1} = {2}".format(valorResul, x, valorResul * x))
 
 Tabla(num1)
