@@ -1,0 +1,71 @@
+import os
+
+
+class Operasbas:
+
+    def _init_(self):
+        pass
+
+    def suma(self, a, b):
+        self.num1 = a
+        self.num2 = b
+        self.res = self.num1+self.num2
+        print("La suma es: {}".format(self.res))
+
+    def resta(self, a, b):
+        self.num1 = a
+        self.num2 = b
+        self.res = self.num1-self.num2
+        print("La resta es: {}".format(self.res))
+
+    def multiplicacion(self, a, b):
+        self.num1 = a
+        self.num2 = b
+        self.res = self.num1*self.num2
+        print("La suma es: {}".format(self.res))
+
+    def division(self, a, b):
+        self.num1 = a
+        self.num2 = b
+        self.res = self.num1/self.num2
+
+
+def main():
+    opcion = 0
+    while True:
+        print('Menu de opreraciones')
+        opcion = int(input(
+        "1 para Suma.\n 2 para Resta.\n 3 para Multiplicación.\n 4 para Division.\n 5 para Salir.\n"))
+        obj = Operasbas()
+
+        if opcion == 1:
+            os.system('cls')
+            n1 = int(input("Ingresa el primer numero: "))
+            n2 = int(input("Ingresa el segundo numero: "))
+            obj.suma(n1, n2)
+
+        elif opcion == 2:
+            os.system('cls')
+            n1 = int(input("Ingresa el primer numero: "))
+            n2 = int(input("Ingresa el segundo numero: "))
+            obj.resta(n1, n2)
+
+        elif opcion == 3:
+            os.system('cls')
+            n1 = int(input("Ingresa el primer numero: "))
+            n2 = int(input("Ingresa el segundo numero: "))
+            obj.multiplicacion(n1, n2)
+
+        elif opcion == 4:
+            os.system('cls')
+            n1 = int(input("Ingresa el primer numero: "))
+            n2 = int(input("Ingresa el segundo numero: "))
+            obj.division(n1, n2)
+
+        elif opcion == 5:
+            print("Adios")
+            break
+
+
+if __name__ == "__main__":
+    main()
